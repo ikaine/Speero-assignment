@@ -1,0 +1,99 @@
+.speero-Popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.speero-Popup.hide {
+    display: none;
+}
+
+.speero-Popup_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.speero-Popup_main {
+    position: absolute;
+    top: 20vh;
+    padding: 3rem 2rem;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 31.25rem;
+    background-color: #fff;
+}
+
+.speero-Popup_content {
+    padding-top: 1rem;
+}
+
+.speero-Popup_close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+    line-height: 1;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.speero-Popup_close::before {
+    content: '⨉';
+}
+
+.speero-CheckoutBtn {
+    padding: 1rem 2rem;
+    display: block;
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #00b0ff;
+    border-radius: 4rem;
+}
+
+.speero-CheckoutBtn:hover {
+    color: #fff;
+    background-color: #00c2ff;
+}
+
+.header-cart i.fa-shopping-cart.hasContent {
+    color: #0f0;
+}
+
+@media (min-width: 768px) {
+    .woocommerce .products ul,
+    .woocommerce ul.products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .woocommerce .products ul:before,
+    .woocommerce ul.products:before {
+        display: none;
+    }
+    
+    .woocommerce ul.products li.product,
+    .woocommerce-page ul.products li.product {
+        margin-right: 0%;
+        width: 30.3333%;
+    }
+    
+    .woocommerce ul.products li.first,
+    .woocommerce-page ul.products li.first {
+        clear: none;
+    }
+}
