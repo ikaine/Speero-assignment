@@ -9,6 +9,11 @@
         /* Initialize the cart emptyness check */
         initCartCheck();
 
+        /* Initialize the cart emptyness check when the user adds products to an empty cart */
+        $( document.body ).on( 'added_to_cart', function(){
+            initCartCheck();
+        });
+
 
         function setDefaultSearchCategory() {
             const Selector = {
